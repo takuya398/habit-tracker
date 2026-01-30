@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Habit Tracker - 簡易版</title>
+    <style>
+      body{font-family:Arial,Helvetica,sans-serif;max-width:800px;margin:20px auto;padding:0 16px}
+      .habit{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid #eee}
+      button{padding:6px 10px}
+    </style>
+  </head>
+  <body>
+    <h1>Habit Tracker（簡易）</h1>
+
+    <form id="addForm">
+      <input id="name" placeholder="習慣名を入力" required />
+      <button type="submit">追加</button>
+    </form>
+
+    <h2>習慣一覧</h2>
+    <div id="list">読み込み中…</div>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
