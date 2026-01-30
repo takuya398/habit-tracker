@@ -2,11 +2,8 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/api/habits": "pages/api/habits.js",
-  "/api/notifications/unchecked": "pages/api/notifications/unchecked.js",
   "/": "pages/index.js",
-  "/api/checkins/list": "pages/api/checkins/list.js",
-  "/api/stats/[id]": "pages/api/stats/[id].js",
-  "/api/habits/[id]/checkin": "pages/api/habits/[id]/checkin.js",
-  "/calendar": "pages/calendar.js"
+  "/login": "pages/login.js",
+  "/calendar": "pages/calendar.js",
+  "/api/habits": "pages/api/habits.js"
 }
