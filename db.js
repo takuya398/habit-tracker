@@ -1,5 +1,12 @@
 const sqlite3 = require('sqlite3').verbose();
-const db = new sqlite3.Database('./data.db');
+const path = require('path');
+const os = require('os');
+
+const dbPath = process.env.VERCEL
+  ? path.join(os.tmpdir(), 'data.db')
+  : './data.db';
+
+const db = new sqlite3.Database(dbPath);
 
 db.serialize(() => {
   db.run(`CREATE TABLE IF NOT EXISTS users (
